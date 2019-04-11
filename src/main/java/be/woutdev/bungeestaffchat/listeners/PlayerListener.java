@@ -51,6 +51,9 @@ public class PlayerListener implements Listener
 
             if (player.isScToggled())
             {
+                if(e.getMessage.startsWith("/")) {
+                  return;
+                }
                 e.setCancelled(true);
 
                 BungeeStaffChat.getInstance()
